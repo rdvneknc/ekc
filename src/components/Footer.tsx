@@ -4,10 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { HashLink } from "@/components/ui/HashLink";
 import { parseHashHref } from "@/lib/scroll-to-hash";
 
-const socialLinks = [
-  { label: "LinkedIn", href: "#" },
-  { label: "Instagram", href: "#" },
-];
+const socialLinks = [{ label: "LinkedIn", href: "#" }];
 
 export function Footer() {
   return (

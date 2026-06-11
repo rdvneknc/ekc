@@ -49,7 +49,7 @@ export function Navbar() {
           <div className="hidden lg:block">
             <Button href="/#contact" variant="primary">
               Let&apos;s Talk
-              <span aria-hidden="true">→</span>
+              <span className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">→</span>
             </Button>
           </div>
 

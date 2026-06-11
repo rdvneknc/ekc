@@ -23,8 +23,7 @@ function HeroFeatures({ className = "" }: { className?: string }) {
 
 export function Hero() {
   return (
-    <>
-      <section className="relative min-h-[calc(100vw*888/500)] overflow-hidden py-12 sm:py-16 lg:min-h-[600px] lg:py-24">
+    <section className="relative min-h-[calc(100vw*888/500)] overflow-hidden pb-6 pt-12 sm:pb-8 sm:pt-16 lg:min-h-[600px] lg:py-24">
         <div
           className="absolute inset-0 bg-[length:100%_auto] bg-top bg-no-repeat lg:hidden"
           style={{ backgroundImage: "url('/headerphotomobile.jpg.jpg')" }}
@@ -37,6 +36,10 @@ export function Hero() {
         />
         <div
           className="absolute inset-0 bg-gradient-to-b from-white/92 from-0% via-white/75 via-[38%] to-transparent to-[55%] lg:bg-gradient-to-r lg:from-white lg:from-[32%] lg:via-white/30 lg:to-transparent"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-warm-trust sm:h-32 lg:hidden"
           aria-hidden="true"
         />
 
@@ -63,7 +66,12 @@ export function Hero() {
               <div className="mt-8 flex flex-col gap-3 lg:flex-row lg:items-center">
                 <Button href="/work" className="w-full lg:w-auto">
                   See Our Work
-                  <span aria-hidden="true">→</span>
+                  <span
+                    className="transition-transform duration-200 group-hover:translate-x-1"
+                    aria-hidden="true"
+                  >
+                    →
+                  </span>
                 </Button>
                 <Button
                   href="/#pricing"
@@ -80,13 +88,6 @@ export function Hero() {
             <div className="hidden lg:block" aria-hidden="true" />
           </div>
         </Container>
-      </section>
-
-      <section className="border-b border-gray-100 bg-surface py-6 lg:hidden">
-        <Container>
-          <HeroFeatures className="flex-col items-start gap-4" />
-        </Container>
-      </section>
-    </>
+    </section>
   );
 }

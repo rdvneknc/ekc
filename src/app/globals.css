@@ -7,6 +7,7 @@
   --accent: #d9f99d;
   --accent-dark: #65a30d;
   --surface: #f9fafb;
+  --warm-trust: #f6f3ee;
 }
 
 @theme inline {
@@ -16,6 +17,7 @@
   --color-accent: var(--accent);
   --color-accent-dark: var(--accent-dark);
   --color-surface: var(--surface);
+  --color-warm-trust: var(--warm-trust);
   --font-sans: var(--font-inter);
 }
 

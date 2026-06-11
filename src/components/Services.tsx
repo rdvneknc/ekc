@@ -5,7 +5,7 @@ import { ServiceIcon } from "@/components/ui/Icons";
 
 export function Services() {
   return (
-    <section id="services" className="scroll-mt-20 py-16 sm:py-20 lg:py-24">
+    <section id="services" className="scroll-mt-20 bg-surface py-16 sm:py-20 lg:py-24">
       <Container>
         <SectionHeader
           label="What We Do"
@@ -17,7 +17,7 @@ export function Services() {
           {services.map((service) => (
             <article
               key={service.title}
-              className="group rounded-xl border border-gray-100 p-6 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md"
+              className="group rounded-xl border border-gray-100 bg-white p-6 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md"
             >
               <div
                 className={`mb-4 flex h-11 w-11 items-center justify-center rounded-full ${service.color}`}

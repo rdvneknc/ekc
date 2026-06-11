@@ -47,7 +47,7 @@ export function Pricing() {
             <div className="mt-8">
               <Button href="/#contact" className="w-full">
                 Get Started
-                <span aria-hidden="true">→</span>
+                <span className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">→</span>
               </Button>
             </div>
           </div>
@@ -61,7 +61,7 @@ export function Pricing() {
             <div className="mt-8">
               <Button href="/#contact" variant="secondary" className="w-full">
                 Request a Quote
-                <span aria-hidden="true">→</span>
+                <span className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">→</span>
               </Button>
             </div>
           </div>
@@ -78,7 +78,7 @@ export function Pricing() {
             <div className="mt-8">
               <Button href="/#contact" variant="secondary" className="w-full">
                 Learn More
-                <span aria-hidden="true">→</span>
+                <span className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">→</span>
               </Button>
             </div>
           </div>

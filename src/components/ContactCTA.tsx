@@ -96,7 +96,7 @@ export function ContactCTA() {
 
             Let&apos;s Talk
 
-            <span aria-hidden="true">→</span>
+            <span className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">→</span>
 
           </Button>
 
